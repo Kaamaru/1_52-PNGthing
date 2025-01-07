@@ -56,8 +56,8 @@ fn main() {
     .insert_resource(ClearColor(Color::rgba(0.0, 1.0, 0.0,0.0)))
     .insert_resource(UiStufff{
         thresh: -5.0,
-        path1: "../Idle.png".to_string(),
-        path2: "../Active.png".to_string(),
+        path1: "Idle.png".to_string(),
+        path2: "Active.png".to_string(),
         color: Srgba::new(0.0,0.0 ,0.0 , 1.0),
         bro_size: 200.0,
         inactiveopac: 0.5,
@@ -130,8 +130,8 @@ fn ui_system(
             }
 
             if show_tuto {
-                ui.label("Put the images in this directory!!");
-                ui.label("With the name Idle.png and Active.png");
+                ui.label("Put the images in 'assets' directory!!");
+                ui.label("With the name  Idle.png  and  Active.png ");
                 ui.label("Why? Cuz sigma.");
             }
 
